@@ -100,7 +100,7 @@ body{
     background-color: hsl(158, 48%, 17%);
 }
 
-@media (width:375px){
+@media (max-width:375px){
 
     .containor{
         height: fit-content;

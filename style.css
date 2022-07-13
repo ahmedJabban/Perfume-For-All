@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+.containor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 300px 300px;
+}
+
+.containor .images-both{
+    border-radius: 10px;
+    background-image: url("images/image-product-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.containor .info-all{
+    padding: 25px;
+}
+
+.containor .normal-name{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.containor .strange-name{
+    line-height: 30px;
+    font-family: 'Fraunces', serif;
+    margin-bottom: 25px;
+    color: hsl(212, 21%, 14%);
+    font-size: 30px;
+}
+
+.containor .details{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.containor .price{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.containor .btn-pay{
+    width: 100%;
+    height: fit-content;
+    padding: 15px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.containor .btn-pay span{
+    margin-right: 10px;
+}
+
+.containor .price del{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 25px;
+    position: absolute;
+    transform: translate(10%,70%);
+}
+
+.btn-pay:hover{
+    background-color: hsl(158, 48%, 17%);
+}
+
+@media (width:375px){
+
+    .containor{
+        height: fit-content;
+        width: 343px;
+        display: grid;
+        grid-template-rows: 240px auto;
+        grid-template-columns: none;
+    }
+
+    .containor .images-both{
+        background-image: url("images/image-product-mobile.jpg");
+        background-repeat: no-repeat;
+        border-radius: 10px 10px 0 0;
+        background-size: cover;
+    }
+
+    .containor .normal-name{
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .containor .strange-name{
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    .containor .details{
+        line-height: 25px;
+        font-size: 14px;
+        margin-bottom: 45px;
+    }
+
+    .containor .price{
+        margin-bottom: 20px;
+    }
+}

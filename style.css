@@ -23,18 +23,18 @@ body{
     grid-template-columns: 300px 300px;
 }
 
-.containor .images-both{
+.images-both{
     border-radius: 10px;
     background-image: url("images/image-product-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.containor .info-all{
+.info-all{
     padding: 25px;
 }
 
-.containor .normal-name{
+.normal-name{
     font-size: 14px;
     text-transform: uppercase;
     color: hsl(228, 12%, 48%);
@@ -44,7 +44,7 @@ body{
     letter-spacing: 5px;
 }
 
-.containor .strange-name{
+.strange-name{
     line-height: 30px;
     font-family: 'Fraunces', serif;
     margin-bottom: 25px;
@@ -52,7 +52,7 @@ body{
     font-size: 30px;
 }
 
-.containor .details{
+.details{
     color: hsl(228, 12%, 48%);
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -60,7 +60,7 @@ body{
     margin-bottom: 30px;
 }
 
-.containor .price{
+.price{
     color: hsl(158, 36%, 37%);
     font-family: 'Fraunces', serif;
     font-weight: 700;
@@ -68,7 +68,7 @@ body{
     margin-bottom: 25px;
 }
 
-.containor .btn-pay{
+.btn-pay{
     width: 100%;
     height: fit-content;
     padding: 15px;
@@ -82,11 +82,11 @@ body{
     cursor: pointer;
 }
 
-.containor .btn-pay span{
+.btn-pay span{
     margin-right: 10px;
 }
 
-.containor .price del{
+.price del{
     color: hsl(228, 12%, 48%);
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -110,30 +110,30 @@ body{
         grid-template-columns: none;
     }
 
-    .containor .images-both{
+    .images-both{
         background-image: url("images/image-product-mobile.jpg");
         background-repeat: no-repeat;
         border-radius: 10px 10px 0 0;
         background-size: cover;
     }
 
-    .containor .normal-name{
+    .normal-name{
         margin-bottom: 10px;
         font-size: 12px;
     }
 
-    .containor .strange-name{
+    .strange-name{
         margin-bottom: 15px;
         font-weight: bold;
     }
 
-    .containor .details{
+    .details{
         line-height: 25px;
         font-size: 14px;
         margin-bottom: 45px;
     }
 
-    .containor .price{
+    .price{
         margin-bottom: 20px;
     }
 }

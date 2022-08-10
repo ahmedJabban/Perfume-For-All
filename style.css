@@ -24,7 +24,7 @@ body{
 }
 
 .images-both{
-    border-radius: 10px;
+    border-radius: 10px 0px 0 10px;
     background-image: url("images/image-product-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -100,7 +100,7 @@ body{
     background-color: hsl(158, 48%, 17%);
 }
 
-@media (max-width:375px){
+@media (max-width:540px){
 
     .containor{
         height: fit-content;
@@ -108,6 +108,11 @@ body{
         display: grid;
         grid-template-rows: 240px auto;
         grid-template-columns: none;
+        transform: scale(0.8);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .images-both{
@@ -135,5 +140,23 @@ body{
 
     .price{
         margin-bottom: 20px;
+    }
+}
+
+@media (width:375px){
+    
+    .containor{
+        transform: scale(0.8);
+        left: 5%;
+        top: 4%;
+    }
+}
+
+@media (width:360px){
+    
+    .containor{
+        transform: scale(0.8);
+        left: 3%;
+        top: 4%;
     }
 }
